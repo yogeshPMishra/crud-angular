@@ -1,0 +1,31 @@
+<div class="card-wrapper">
+    <mat-card>
+        <mat-card-header>
+            <h1>Create</h1>
+        </mat-card-header>
+        <mat-card-content>
+            <form (ngSubmit)="create()" #myForm='ngForm'>
+                <mat-form-field appearance="outline" color="accent">
+                    <mat-label>Name</mat-label>
+                    <input matInput placeholder="Ex : Ram ..." [(ngModel)]="formdata.name" name="name" #name='ngModel'>
+                    <mat-icon matSuffix color="accent">account_circle</mat-icon>
+                </mat-form-field>
+                <mat-form-field appearance="outline" color="accent">
+                    <mat-label>Email</mat-label>
+                    <input matInput placeholder="Ex : sam@gmail.com.." type="email" [(ngModel)]="formdata.email" name="email" #email='ngModel'>
+                    <mat-icon matSuffix color="accent">email</mat-icon>
+                </mat-form-field>
+                <mat-form-field appearance="outline" color="accent">
+                    <mat-label>Phone</mat-label>
+                    <input matInput placeholder="Ex :77******45 " type="number" [(ngModel)]="formdata.phone" name="phone" #phone='ngModel'>
+                    <mat-icon matSuffix color="accent">phone</mat-icon>
+                </mat-form-field>
+                <mat-form-field class="example-full-width" appearance="outline" color="accent">
+                    <mat-label>Leave a comment</mat-label>
+                    <textarea matInput placeholder="Ex. It makes me feel..." [(ngModel)]="formdata.comment" name="comment" #comment='ngModel'></textarea>
+                </mat-form-field>
+                <button mat-raised-button color="accent" id="submit-btn" type="submit">Submit</button>
+            </form>
+        </mat-card-content>
+    </mat-card>
+</div>

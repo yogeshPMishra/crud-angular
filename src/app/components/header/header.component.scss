@@ -1,0 +1,30 @@
+.toolbar {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #1976d2;
+    color: white;
+    font-weight: 600;
+    .spacer {
+        flex: 1;
+    }
+    img {
+        margin: 0 16px;
+    }
+    #title {
+        font-weight: normal;
+        font-size: 25px;
+    }
+    .navbar {
+        display: flex;
+        list-style: none;
+        .nav {
+            color: white;
+            margin-right: 20px;
+            a {
+                font-weight: normal;
+                font-size: 15px;
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+.table-warpper {
+    width: 100%;
+}
+
+table {
+    width: 100%;
+}
+
+.action-wrapper {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a {
+        margin-right: 5px;
+    }
+    a,
+    button {
+        width: 40px;
+        height: 40px;
+    }
+}
